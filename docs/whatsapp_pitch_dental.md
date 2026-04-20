@@ -32,8 +32,9 @@ One thing I noticed: patients searching "dentist in
 a booking commission. Your own site sends patients 
 directly to your WhatsApp — no middleman, no cut.
 
-I built this for a Ghaziabad clinic similar to yours:
+I built these for clinics similar to yours:
 → https://aura-clinic-ten.vercel.app/
+→ https://veda-smiles-demo-2zt5.vercel.app/
 
 4 pages. WhatsApp booking button. Mobile-ready. 
 ₹3,999 one-time, site live in 3 days.
