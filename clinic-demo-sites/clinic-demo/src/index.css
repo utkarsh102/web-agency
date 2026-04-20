@@ -1,0 +1,161 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    background: #080808;
+  }
+
+  body {
+    @apply bg-void text-parchment font-sans overflow-x-hidden;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  ::selection {
+    background: #E8A59840;
+    color: #F5F0EC;
+  }
+}
+
+/* Noise overlay */
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+  opacity: 0.02;
+  pointer-events: none;
+  z-index: 9999;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-track { background: #080808; }
+::-webkit-scrollbar-thumb { background: #E8A598; border-radius: 2px; }
+
+/* Animated gradient orbs */
+@keyframes float-slow {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  33% { transform: translate(30px, -40px) scale(1.08); }
+  66% { transform: translate(-20px, 20px) scale(0.95); }
+}
+
+@keyframes float-medium {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  50% { transform: translate(-40px, 30px) scale(1.1); }
+}
+
+.orb-1 { animation: float-slow 12s ease-in-out infinite; }
+.orb-2 { animation: float-medium 9s ease-in-out infinite; }
+.orb-3 { animation: float-slow 15s ease-in-out infinite reverse; }
+
+/* Shimmer line */
+@keyframes shimmer {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(400%); }
+}
+
+.shimmer-line::after {
+  content: '';
+  position: absolute;
+  top: 0; left: 0;
+  width: 25%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(232,165,152,0.4), transparent);
+  animation: shimmer 3s ease-in-out infinite;
+}
+
+/* Typewriter cursor */
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+.cursor { animation: blink 1s step-end infinite; }
+
+/* Card hover tilt */
+.tilt-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transform-style: preserve-3d;
+}
+.tilt-card:hover {
+  transform: translateY(-4px) rotateX(2deg) rotateY(-2deg);
+  box-shadow: 0 20px 60px rgba(232,165,152,0.12);
+}
+
+/* Marquee */
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+.marquee-track { animation: marquee 20s linear infinite; }
+
+/* Gradient text */
+.text-gradient {
+  background: linear-gradient(135deg, #E8A598, #C4956A);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Section fade-up (GSAP will handle but CSS fallback) */
+.reveal { opacity: 0; transform: translateY(32px); }
+
+/* Counter flash */
+@keyframes count-flash {
+  0% { color: #E8A598; }
+  100% { color: inherit; }
+}
+
+/* Horizontal rule gradient */
+.hr-gradient {
+  height: 1px;
+  background: linear-gradient(90deg, transparent, #E8A59840, #C4956A60, #E8A59840, transparent);
+}
+
+/* Tag pill */
+.pill {
+  @apply inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-mono tracking-widest uppercase;
+  border: 1px solid rgba(232,165,152,0.25);
+  background: rgba(232,165,152,0.06);
+  color: #E8A598;
+}
+
+/* Frosted glass */
+.glass {
+  background: rgba(17,16,16,0.7);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(232,165,152,0.1);
+}
+
+/* Glow button */
+.btn-primary {
+  @apply relative inline-flex items-center gap-2 px-7 py-3.5 rounded-full text-sm font-sans font-medium tracking-wide overflow-hidden;
+  background: linear-gradient(135deg, #E8A598, #C4956A);
+  color: #080808;
+  transition: all 0.3s ease;
+}
+.btn-primary::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, #C4956A, #E8A598);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.btn-primary:hover::before { opacity: 1; }
+.btn-primary:hover { transform: translateY(-1px); box-shadow: 0 8px 30px rgba(232,165,152,0.35); }
+.btn-primary span { position: relative; }
+
+.btn-ghost {
+  @apply inline-flex items-center gap-2 px-7 py-3.5 rounded-full text-sm font-sans font-medium tracking-wide;
+  border: 1px solid rgba(232,165,152,0.3);
+  color: #E8A598;
+  transition: all 0.3s ease;
+}
+.btn-ghost:hover {
+  border-color: rgba(232,165,152,0.7);
+  background: rgba(232,165,152,0.06);
+}
