@@ -22,7 +22,7 @@
 
 ```
 Hi, this is Utkarsh — I build websites for dental 
-clinics in Delhi NCR (based in Gurugram).
+clinics in Delhi NCR.
 
 I came across {Clinic Name} on Google — {rating}★, 
 {reviews}+ reviews. Solid clinic.
@@ -77,7 +77,7 @@ Happy to share a 60-second demo if curious —
 no commitment at all.
 
 — Utkarsh
-WebAI Agency | Gurugram
+WebAI Agency
 ```
 
 ---
