@@ -18,35 +18,30 @@
 
 ## Template A — PRIME tier (no own website)
 
-> **Trust-first rewrite** — feels personal, not bulk. Mention real stats, local credibility, soft CTA.
+> **Clinic-first opener** — lead with their stats and pain point, not your intro. Dropping the self-intro removes the instant "cold pitch" signal. One demo link keeps it short.
 
 ```
-Hi, this is Utkarsh — I build websites for dental 
-clinics in Delhi NCR.
+Hi {Clinic Name} 👋
 
-I came across {Clinic Name} on Google — {rating}★, 
-{reviews}+ reviews. Solid clinic.
+{rating}★, {reviews}+ reviews — patients trust you 
+in {locality}. But when they search "dentist in 
+{locality}" on Google, Practo shows up first, not you.
+Every booking through Practo is a commission you 
+don't have to pay.
 
-One thing I noticed: patients searching "dentist in 
-{locality}" find Practo first, not you. Practo charges 
-a booking commission. Your own site sends patients 
-directly to your WhatsApp — no middleman, no cut.
-
-I built these for clinics similar to yours:
+I built these for NCR clinics — same thing I'd 
+build for you:
 → https://aura-clinic-ten.vercel.app/
 → https://veda-smiles-demo-2zt5.vercel.app/
 
 4 pages. WhatsApp booking button. Mobile-ready. 
-₹3,999 one-time, site live in 3 days.
+₹3,999 one-time, live in 3 days.
 
-I'm offering this to 3 founding clinics at this price 
-(regular ₹11,999) — in exchange for a short video 
-review after launch.
+Only 3 founding slots at this price (regular ₹11,999)
+— in exchange for a short video review after launch.
 
-Any questions? Happy to help.
-
+Worth a look?
 — Utkarsh
-WebAI Agency | Delhi-NCR
 ```
 
 ---
@@ -85,6 +80,24 @@ WebAI Agency
 ## Template C — NEEDS_LOOKUP (Indirapuram)
 
 These rows have no phone in the CSV. Open the `gmaps_url`, grab the phone + check if they have a website, then send Template A or B.
+
+---
+
+## 48h follow-up (no reply to first message)
+
+```
+Hi 👋
+
+Just checking if my earlier message reached you — about
+the 3-day dental website for ₹3,999.
+
+Live sample in case you missed it:
+→ https://aura-clinic-ten.vercel.app/
+→ https://veda-smiles-demo-2zt5.vercel.app/
+
+Happy to answer any questions. No pressure.
+— Utkarsh
+```
 
 ---
 
