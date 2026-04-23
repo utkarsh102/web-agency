@@ -5,9 +5,13 @@
 → https://veda-smiles-demo-2zt5.vercel.app/
 
 **Pitch angle rules used (to avoid wrong Practo references):**
-- 100+ reviews → "bookings going through Practo/third-party platforms take a cut" (almost certainly listed)
+- 100+ reviews → "bookings going through Practo/third-party platforms take a cut" (usually listed — BUT verify per-clinic before sending)
 - < 100 reviews → "patients searching Google find competitors with websites, not you"
 - Implant/ortho/cosmetic specialty → lead with high-ticket patient research angle regardless of review count
+- ⚠️ **Verified exceptions** (do NOT use commission angle — use visibility angle instead):
+  - #1 Manavya Dental (382 reviews but NOT on Practo's Sector 71 listings, verified 2026-04-23)
+
+**Top-3 refined pitches** (2026-04-23): #1 Manavya, #2 Fennel, #3 Confismile have been updated based on competitor-profiling + seo-audit research. See `leads/manavya_dental_audit.md`, `leads/fennel_dental_audit.md`, `leads/confismile_audit.md` for rationale.
 
 > Pricing, objection scripts, and "after they say yes" template → [docs/whatsapp_pitch_dental.md](../docs/whatsapp_pitch_dental.md)
 
